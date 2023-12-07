@@ -1,12 +1,14 @@
 ## AFTER GIT CLONE
 Jangan lupa lakuin ini:
+- composer install
+- npm install
+- cp .env.example .env
+- Ubah database dalam .env yang telah dibuat kedalam database yang kalian buat
 - php artisan migrate
 - php artisan db:seed
 - npm run build
-- cp .env.example .env
 
-Lalu masuk ke .env yang udah dibuat, masukkan database kamu yang udah ada, kalo semisal udah ada isinya:
-- php artisan migrate:fresh
+- php artisan migrate:fresh (Jika DI MIGRATE ERROR)
 
 Kalo semisal udah tinggal :
 - php artisan serve
